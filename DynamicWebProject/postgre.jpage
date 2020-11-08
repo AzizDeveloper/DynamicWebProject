@@ -1,0 +1,15 @@
+//-- Table: book.BOOKSTABLE
+
+DROP TABLE book."BOOKSTABLE";
+
+CREATE TABLE book."BOOKSTABLE"
+(
+    id integer NOT NULL,
+    name character(250) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT "BOOKS_pkey" PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE book."BOOKSTABLE"
+    OWNER to postgres;
